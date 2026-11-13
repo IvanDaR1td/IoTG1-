@@ -18,8 +18,8 @@ mqtt = umqtt.MQTTClient(
 wifi = WLAN(WLAN.IF_STA)
 wifi.active(True)
 
-ssid = "Fork"
-password = "Password123!"
+ssid = "ssid"
+password = "password"
 
 def connect(wifi_obj, ssid, password, timeout=10):
     print("Trying to connect to WiFi")

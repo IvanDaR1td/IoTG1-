@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package lab9;
+
+// Time of day in UTC, obtained from a synchronised Pico RTC.
+message Time {
+  required uint32 hour = 1;
+  required uint32 minute = 2;
+  required uint32 second = 3;
+}
+
+message TemperatureReading {
+  required float temperature_c = 1;
+  required string publisher_id = 2;
+  required Time time = 3;
+}
